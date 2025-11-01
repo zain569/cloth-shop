@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #7a41d6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADING ===== */
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 50px;
+    animation-name: heading;
+    animation-duration: 2s;
+}
+
+@keyframes heading {
+    from {
+        width: 0;
+        opacity: 0;
+        font-size: 0px;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* ===== DESCRIPTION ===== */
+#des {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    animation-name: des;
+    animation-duration: 2.5s;
+}
+
+@keyframes des {
+    from {
+        width: 0;
+        opacity: 0;
+        font-size: 0px;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* ===== SUB-HEADING ===== */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(231, 229, 229);
+    animation-name: des;
+    animation-duration: 2.5s;
+}
+
+/* ===== ORDER DETAILS ===== */
+.pa {
+    margin-left: 35%;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    animation-name: strong;
+    animation-duration: 2s;
+}
+
+#top-pa {
+    margin-top: 50px;
+}
+
+@keyframes strong {
+    from {
+        width: 0;
+        opacity: 0;
+        font-size: 0;
+        color: black;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+/* ===== BUTTON AREA ===== */
+#bout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    height: 60px;
+    width: 80%;
+    background-color: lightblue;
+    margin-top: 80px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px black;
+    animation-name: strong;
+    animation-duration: 2s;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#home:active {
+    box-shadow: 0px 0px 0px black;
+    transform: scale(0.97);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 60px;
+    }
+
+    #des {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .pa {
+        margin-left: 10%;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+
+    #home {
+        width: 90%;
+        height: 50px;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+}
+
+/* Tablets (600px–1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
+        margin-top: 80px;
+    }
+
+    #des {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .pa {
+        margin-left: 20%;
+        font-size: 22px;
+    }
+
+    #home {
+        width: 70%;
+        height: 55px;
+        font-size: 1.1rem;
+        margin-top: 60px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .pa {
+        margin-left: 35%;
+    }
+}

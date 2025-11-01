@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Order</title>
+    <link rel="stylesheet" href="placeorder1.css">
+</head>
+<body>
+    <h1>PLACE ORDER</h1>
+    <div id="outer">
+    <form id="form" action="/submit-order" method="POST">
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email" placeholder="email" class="input" required>
+        <div id="emailError" class="error"></div>
+        <br>
+
+        <label for="name">Name:</label><br>
+        <input class="input" type="text" id="name" placeholder="First Name" name="name" required>
+        <div id="nameerror" class="error"></div>
+        <br>
+
+        <label for="lname">Father Name:</label><br>
+        <input class="input" type="text" id="lname" name="lname" placeholder="Last Name" required>
+        <div id="lnameerror" class="error"></div>
+        <br>
+
+        <label for="phoneNo">Phone Number:</label><br>
+        <input type="number" name="phoneNo" placeholder="Phone Number" id="phoneNo" class="input" required>
+        <div id="phoneError" class="error"></div>
+        <br>
+
+        <label for="address">Address 1:</label><br>
+        <input type="text" name="address1" placeholder="Address 1" id="address1" class="input" required>
+        <div id="addresserror" class="error"></div>
+        <br>
+
+        <label for="address2">Address 2:</label><br>
+        <input type="text" name="address2" id="address2" placeholder="Address 2" class="input" >
+        <div id="address2error" class="error"></div>
+        <br>
+
+        <label for="province">Select Province:</label><br>
+        <select name="province" id="province" class="input" required>
+            <option value="">--Select Province--</option>
+            <option value="punjab">Punjab</option>
+            <option value="sindh">Sindh</option>
+            <option value="KPK">KPK</option>
+            <option value="Balochistan">Balochistan</option>
+            <option value="Gilgit-Baltistan">Gilgit-Baltistan</option>
+            <option value="Azad Jammu & Kashmir">Azad Jammu & Kashmir</option>
+            <option value="Federally Administered / Tribal Areas (merged)">Federally Administered / Tribal Areas (merged)</option>
+        </select>
+        <div id="provinceerror" class="error"></div>
+        <br>
+
+        <label for="city">Select City:</label><br>
+        <select name="city" id="city" class="input" required>
+            <option value="">--Select City--</option>
+        </select>
+        <div id="cityerror" class="error"></div>
+        <br>
+
+        <input type="radio" name="gender" id="male" value="male" required class="input2" > Male<br>
+        <input type="radio" name="gender" id="female" value="Female" class="input2"> Female <br>
+        <input type="radio" name="gender" id="other" value="other" class="input2" > Other 
+        <div id="gendererror" class="error"></div>
+        <br>
+
+        <label for="payment">Select Payment Method:</label><br>
+        <input type="radio" name="payment" id="payment" value="COD" class="input2" required> COD <br>
+        <br><br>
+
+        <button id="submit" type="submit">SUBMIT</button>
+        <script src="placeorder.js"></script>
+    </form>
+    </div>
+</body>
+</html>

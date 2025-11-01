@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 174, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 5PX rgba(0,0,0,0.8);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(0, 174, 255);
+    font-size: xx-large;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="confirm-password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover{
+    border-color: rgb(0, 174, 255);
+    box-shadow: 0 0 5px rgba(0, 174, 255, 0.5);
+    background-color: #ffffff;
+}
+
+label{
+    font-size: 24px;
+    color: #333;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: rgb(0, 134, 205);
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+#nameerror, #emailerror, #passworderror, #confirm-passworderror{
+    color: red;
+    font-size: 14px;
+}

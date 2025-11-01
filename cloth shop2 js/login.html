@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div id="outer-container">
+    <h2>LOGIN / REGISTER</h2>
+
+    <div class="field">
+      <label for="emailInput">Email:</label><br>
+      <input type="email" id="emailInput" name="email" placeholder="you@example.com"><br>
+      <div id="emailError" class="error"></div>
+    </div>
+
+    <div class="field">
+      <label for="passwordInput">Password:</label><br>
+      <input type="password" id="passwordInput" name="password" placeholder="Enter password"><br>
+      <div id="passwordError" class="error"></div>
+    </div>
+
+    <div class="actions">
+      <button id="loginBtn" type="button">Login</button>
+      <button id="registerBtn" type="button">Register</button>
+    </div>
+
+    <div id="generalError" class="error" style="margin-top:12px"></div><br>
+    <button id="delete-account">DELETE ACCOUNT</button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

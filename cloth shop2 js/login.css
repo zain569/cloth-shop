@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 174, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer-container{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 10px 15px 5PX rgba(0,0,0,0.8);
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(162, 0, 255);
+    font-size: xx-large;
+}
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="email"]:hover, input[type="password"]:hover{
+    border-color: rgb(162, 0, 255);
+    box-shadow: 0 0 5px rgba(162, 0, 255, 0.5);
+    background-color: #ffffff;
+}
+
+#loginBtn{
+    height: 50px;
+    width: 45%;
+    border: 2px solid rgb(0, 132, 255);
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgb(0, 174, 255);
+    font-size: large;
+    cursor: pointer;
+}
+
+#registerBtn{
+    height: 50px;
+    width: 45%;
+    margin-left: 8%;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: rgba(7, 212, 7, 0.925);
+    font-size: large;
+    cursor: pointer;
+}
+
+label{
+    font-size: 24px;
+    color: #333;
+}
+
+#registerBtn:hover{
+    box-shadow: 0 0 10px rgb(123, 228, 4);
+}
+
+#loginBtn:hover{
+    box-shadow: 0 0 10px rgb(0, 132, 255);
+}
+
+#loginBtn:active, #registerBtn:active{
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.error{
+    color: red;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+#delete-account {
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: darkred;
+    font-size: large;
+    cursor: pointer;
+}
+
+#delete-account:hover {
+    box-shadow: 0 0 10px red;
+}
+
+#delete-account:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
